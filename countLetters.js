@@ -10,11 +10,12 @@ const countLetters = function (sentence) {
   const letterCount = {};
 
   for (letter of sentence) {
-    if (letter === " ") {
-    } else if (letterCount[letter]) {
-      letterCount[letter]++;
-    } else {
-      letterCount[letter] = 1;
+    if (letter !== " ") {
+      if (letterCount[letter]) {
+        letterCount[letter]++;
+      } else {
+        letterCount[letter] = 1;
+      }
     }
   }
   return letterCount;
@@ -32,6 +33,6 @@ const countLighthouse = {
   e: 3,
   n: 1,
 };
-console.log(countLetters("lighthouse in the house"));
-console.log(countLighthouse);
-assertEqual(countLetters("lighthouse in the house"), countLighthouse);
+
+const result = countLetters("lighthouse in the house");
+assertEqual(result.h, 4);

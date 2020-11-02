@@ -2,7 +2,7 @@
 returns the head (first element) of an array
 */
 
-const head = function (myArray) {
+const head = function(myArray) {
   return myArray[0];
 };
 

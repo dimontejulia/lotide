@@ -5,7 +5,7 @@ Validates if 2 objects are equal
 const eqObjects = require("./eqObjects");
 
 // FUNCTION IMPLEMENTATION
-const assertObjectsEqual = function (actual, expected) {
+const assertObjectsEqual = function(actual, expected) {
   const inspect = require("util").inspect;
 
   if (eqObjects(actual, expected)) {

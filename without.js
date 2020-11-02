@@ -4,7 +4,7 @@ remove specified item(s) from an array
 
 const assertArraysEqual = require("./assertArraysEqual");
 
-const without = function (itemsArray, repeatedItems) {
+const without = function(itemsArray, repeatedItems) {
   // .filter() removes item that do not fit the criteria
   // criteria set as elements that are not included in the repeatedItems array
   const newItems = itemsArray.filter((item) => !repeatedItems.includes(item));

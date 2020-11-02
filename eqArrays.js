@@ -1,9 +1,8 @@
 /*
 Validates if two arrays are equal
 */
-const assertEqual = require("./assertEqual");
 
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   if (
     array1 === undefined ||
     array2 === undefined ||

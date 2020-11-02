@@ -6,7 +6,7 @@ const eqArrays = require("./eqArrays");
 
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   const obj1Keys = Object.keys(object1);
   const obj2Keys = Object.keys(object2);
   if (
@@ -17,7 +17,7 @@ const eqObjects = function (object1, object2) {
     return false;
   }
   //loop through all the keys in object 1
-  for (elem in object1) {
+  for (let elem in object1) {
     // check if value is an array to compare using the eqArrays function
     if (Array.isArray(object1[elem])) {
       return eqArrays(object1[elem], object2[elem]);

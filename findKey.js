@@ -5,11 +5,11 @@ takes in an object and a callback and scans the object and returns the first key
 
 const assertEqual = require("./assertEqual");
 
-const findKey = function (myObj, callback) {
+const findKey = function(myObj, callback) {
   //generates a list of keys
   const listOfKeys = Object.keys(myObj);
   //loops through all keys
-  for (key of listOfKeys) {
+  for (let key of listOfKeys) {
     //passes the value of every key to callback function
     //if callback function returns true, return the key
     if (callback(myObj[key])) {

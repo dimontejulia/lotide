@@ -2,12 +2,12 @@
 Given an array or an array of arrays, returns all extracted values in 1 array
 */
 
-const eqArrays = "./eqArrays";
-const assertArraysEqual = "./assertArraysEqual";
+// const eqArrays = "./eqArrays";
+// const assertArraysEqual = "./assertArraysEqual";
 
-const flatten = function (inputArr) {
+const flatten = function(inputArr) {
   let outputArr = [];
-  for (elem of inputArr) {
+  for (let elem of inputArr) {
     if (Array.isArray(elem)) {
       for (let i = 0; i < elem.length; i++) {
         outputArr.push(elem[i]);

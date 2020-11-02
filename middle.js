@@ -3,7 +3,7 @@ returns the middle element of an array. If there are 2, return both
 */
 
 //Implement middle which will take in an array and return the middle-most element(s) of the given array.
-const middle = function (arr) {
+const middle = function(arr) {
   const len = arr.length;
   let outputArr = [];
   const mid = Math.floor(len / 2);

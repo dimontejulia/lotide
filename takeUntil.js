@@ -1,6 +1,6 @@
 //takeUntil which will keep collecting items from a provided array until the callback provided returns a truthy value.
 
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   if (
     array1 === undefined ||
     array2 === undefined ||
@@ -16,7 +16,7 @@ const eqArrays = function (array1, array2) {
   return true;
 };
 
-const assertArraysEqual = function (array1, array2) {
+const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
     console.log(`✅✅✅ Assertion Passed: ${array1} === ${array2}`);
   } else {
@@ -24,7 +24,7 @@ const assertArraysEqual = function (array1, array2) {
   }
 };
 
-const takeUntil = function (array, callback) {
+const takeUntil = function(array, callback) {
   const results = [];
   for (let item of array) {
     if (!callback(item)) {

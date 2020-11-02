@@ -3,7 +3,13 @@ Returns the tail end of an array
 */
 
 const tail = function (myArray) {
-  return myArray.slice(1, myArray.length);
+  if (!myArray || myArray.length===0){
+    console.log('undef');
+    return undefined;
+  } else {
+    return myArray.slice(1, myArray.length);
+  }
+  
 };
 
 module.exports = tail;

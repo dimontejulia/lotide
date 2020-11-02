@@ -2,8 +2,6 @@
 returns the middle element of an array. If there are 2, return both
 */
 
-const assertArraysEqual = require("./assertArraysEqual");
-
 //Implement middle which will take in an array and return the middle-most element(s) of the given array.
 const middle = function (arr) {
   const len = arr.length;
@@ -22,9 +20,4 @@ const middle = function (arr) {
   }
 };
 
-console.log(assertArraysEqual(middle([1]), []));
-console.log(assertArraysEqual(middle([1, 2]), []));
-console.log(assertArraysEqual(middle([1, 2, 3]), [2]));
-console.log(assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]));
-console.log(assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]));
-console.log(assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]));
+module.exports = middle;

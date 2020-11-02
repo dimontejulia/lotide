@@ -1,13 +1,8 @@
-const assertEqual = function (actual, expected) {
-  console.assert(
-    actual !== expected,
-    `✅✅✅ Assertion Passed: ${actual} === ${expected}`
-  );
-  console.assert(
-    actual === expected,
-    `🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`
-  );
-};
+/*
+Returns the tail end of an array
+*/
+
+const assertEqual = require("./assertEqual");
 
 const tail = function (myArray) {
   return myArray.slice(1, myArray.length);

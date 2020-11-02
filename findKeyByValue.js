@@ -1,10 +1,8 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+/*
+Returns the key when provided with it's value
+*/
+
+const assertEqual = require("././assertEqual");
 
 const findKeyByValue = function (myObj, lookupVal) {
   // generates a list of keys found myObj
@@ -23,7 +21,7 @@ const bestTVShowsByGenre = {
   drama: "The Wire",
 };
 
-console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
+//console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama"); //pass
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined); //fail

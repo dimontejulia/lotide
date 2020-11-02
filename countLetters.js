@@ -1,10 +1,8 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+/*
+Returns an object with the count of each letter.
+*/
+
+const assertEqual = require("./assertEqual");
 
 const countLetters = function (sentence) {
   const letterCount = {};
@@ -21,6 +19,7 @@ const countLetters = function (sentence) {
   return letterCount;
 };
 
+//TEST CODE
 const countLighthouse = {
   l: 1,
   i: 2,

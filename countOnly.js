@@ -1,10 +1,8 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+/*
+Count how many times a value appears in an object
+*/
+
+const assertEqual = require("./assertEqual");
 
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
@@ -26,6 +24,7 @@ const countOnly = function (allItems, itemsToCount) {
   //The function should report back how many instances of each string were found in the allItems array of strings.
 };
 
+//TEST CODE
 const firstNames = [
   "Karl",
   "Salima",

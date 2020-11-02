@@ -2,7 +2,7 @@
 Returns an object with the count of each letter.
 */
 
-const assertEqual = require("./assertEqual");
+// const assertEqual = require("./assertEqual");
 
 const countLetters = function(sentence) {
   const letterCount = {};
@@ -33,5 +33,5 @@ const countLetters = function(sentence) {
 //   n: 1,
 // };
 
-const result = countLetters("lighthouse in the house");
-assertEqual(result.h, 4);
+// const result = countLetters("lighthouse in the house");
+// assertEqual(result.h, 4);

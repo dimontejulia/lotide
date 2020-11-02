@@ -2,7 +2,7 @@
 Returns the key when provided with it's value
 */
 
-const assertEqual = require("././assertEqual");
+// const assertEqual = require("./assertEqual");
 
 const findKeyByValue = function(myObj, lookupVal) {
   // generates a list of keys found myObj
@@ -15,13 +15,13 @@ const findKeyByValue = function(myObj, lookupVal) {
   }
 };
 
-const bestTVShowsByGenre = {
-  sci_fi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama: "The Wire",
-};
+// const bestTVShowsByGenre = {
+//   sci_fi: "The Expanse",
+//   comedy: "Brooklyn Nine-Nine",
+//   drama: "The Wire",
+// };
 
 //console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama"); //pass
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined); //fail
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama"); //pass
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined); //fail
